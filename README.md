@@ -11,6 +11,26 @@ Step 2, Install the [LiveReload](https://chrome.google.com/webstore/detail/liver
 
 For more details, refer to [Developer Tools](https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.devtools).
 
+## Code Formatter
+
+[Spring Java Format](https://github.com/spring-io/spring-javaformat) provides Spring-style formatting for Java code.
+
+Step 1: Add the following plugin to `build.gradle.kts`. Then, click on the "Load Script Configurations" and "Load Gradle Changes" icons to apply the changes. For example:
+
+```kotlin
+plugins {
+    // ...
+    id("io.spring.javaformat") version "0.0.39"
+}
+// ...
+```
+
+Step 2: Download the latest version of [spring-javaformat-intellij-idea-plugin](https://repo1.maven.org/maven2/io/spring/javaformat/spring-javaformat-intellij-idea-plugin/0.0.39/) and install it in IntelliJ IDEA by selecting "Install from Disk".
+
+Step 3: On the right side, click on the Gradle tab and then select the icon "Reload all Gradle projects". A yellow icon will appear in the status bar.
+
+Step 4: Click on the "Reformat Code" icon to format your code.
+
 ## Develop with Docker
 
 Step 1, Ensure that Docker is installed on both your computer and the remote server.
